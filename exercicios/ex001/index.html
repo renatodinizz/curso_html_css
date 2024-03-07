@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projeto de consulta</title>
+    <!--Essa é a forma de inserir um ícone-->
+    <!--O código é link:favicon/ lembrando que o formato do arquivo tem que ser .ico-->
+    <link rel="shortcut icon" href="Iconscity-Flags-Brasil.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+</head>
+<body>
+    <!--A hierarquia dos títulos vão do h1 até o h6-->
+    <h1>Testando imagens no site</h1>
+    <h3>Vamos aprender como trabalhar com imagens.</h3>
+    <!-- <hr> coloca uma linha na horizontal e <br> serve para quebrar uma linha-->
+    <hr><br>
+    <img src="html-logo.png" alt="logo do html"><br><br>
+    <img src="css-logo.png" alt="logo do css"><br>
+    <h2>Agora vamos copiar uma imagem da internet</h2>
+    <!--Para copiar uma imagem da internet basta clicar com o botão direito e copiar o link da imagem-->
+    <img src="https://bognarjunior.files.wordpress.com/2018/01/1crcyaithv7aiqh1z93v99q.png" alt="logo do js copiado da internet">
+    <h2>Um parágrafo para testes</h2>
+    <!--Abra um parágrafo e use a tag <lorem> dentro do parágrafo-->
+    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Exercitationem placeat aspernatur, rem explicabo atque, tempore id quia aliquid enim maiores error est at provident suscipit dolorum natus amet laboriosam quam?</p>
+    <h2>Para fazer alterações em um texto</h2>
+    <p>Exemplo de texto em negrito - <strong>tudo o que eu escrever agora vai estar em negrito</strong>.</p>
+    <p>Exemplo de texto em itálico - <em>tudo o que eu escrever agora vai estra em itálico</em>.</p>
+    <p>Podemos colocar um texto marcado com a tag MARK - <mark>agora o texto vai estar marcado</mark>.</p>
+    <p>Pode-se também usar a tag STYLE dentro da tag MARK para alterar a cor do marca texto como <mark style="background-color: chartreuse;">agora mesmo eu vou deixa-lo verde.</mark></p>
+    <p>Podemos diminuir as letras de um texto com a tag SMALL. - <small>Agora o parágrafo vai estar menor</small></p>
+    <p>Podemos usar a tag DEL para deixar um texto riscado - <del>como nesse caso</del></p>
+    <p>E usar a tag INS para subilinhar o texto - <ins>dessa maneira</ins></p><br>
+    <h2>Para sobrescrever um texto utiliza-se a tag SUP</h2>
+    <p>Como no exemplo da equação X<sup>20</sup>+16 = 0</p>
+    <h2>Para subescrever utiliza-se a tag SUB</h2>
+    <p>como no exemplo da formúla da água H<sub>2</sub>O</p><br>
+    <h2>Outras formatações</h2>
+    <p>Pode-se utilizar a tag CODE para deixar a fonte monoespaçada(significa que todos os caracteries irão ter o mesmo espaço).</p>
+    <p>Ex1: Este é um parágrafo sem monoespaçamento - document.getElement.id</p>
+    <p><code>Ex2: Este é um parágrafo com monoespaçamento - document.getElement.id</code></p><br>
+    <p>O código abaixa só foi possivel ser visualizado assim pois foi formatado com a tag PRE, que faz a pré-formatação!</p>
+    <p>Exemplo de texto sem a tag PRE</p>
+    <code>
+        num = int(imput("digite um número"))
+        if num % 2 == 0:
+            print(f "o número(num) é PAR")
+        else:
+            print(f "o número(num) é IMPAR")
+        print("fim do projeto")
+    </code><br>
+    <p>Exemplo de texto com a tag PRE</p>
+    <pre>
+        <code>
+            num = int(imput("digite um número"))
+            if num % 2 == 0:
+                print(f "o número(num) é PAR")
+            else:
+                print(f "o número(num) é IMPAR")
+            print("fim do projeto")
+        </code>
+    </pre>
+    <h2>Citações simples</h2>
+    <!--Usa-se a tag Q para colocar áspas em uma citação-->
+    <p>Um pai de um amigo meu já dizia: <q>O computador é um burro muito rápido</q></p><br>
+    <h2>Citações completas, exemplo abaixo</h2>
+    <!--Outra maneira de fazer citações quando são maiores, essa marcação cite, serve apenas para os mecanismo de buscar saber que você está referindo esse livro-->
+    <p>Segundo Chris Coremans, em seu livro:</p>
+<blockcode cite="https://www.google.com.br/books/edition/HTML_A_Beginner_s_Tutorial/63AdCgAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">To create HMTL documents you need is a text editor and to test them you need a web browser. All Windows or Mac computer come with a text editor and a browser.</blockcode><br>
+<h2>Abreviações</h2>
+<!--Isso vai fazer com que quando o mouse passar em cima da palavra o texto vai ser apresentado-->
+<p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>, estou adorando!</p>
+<p>Temos também a tag BDO que faz o texto ficar invertido como esse exemplo - <bdo dir="rtl">tudo o que eu escrever até aqui vai ficar invertido</bdo></p>
+<h1>Trabalhando com listas</h1>
+<ol type="1" start="5"> <!--1, A, a, I, i-->
+    <li>levantar</li>
+    <li>escovar os dentes</li>
+    <li>vestir uma roupa</li>
+    <li>Ir para academia</li>
+    <li>Estudar</li>
+    <li>Tomar banho</li>
+    <li>Almoçar</li>
+    <li>Voltar a estudar</li>
+</ol>
+<p>Outro tipo de lista</p>
+<ul><!--Disc, Circle, Square-->
+    <li>Comer</li>
+    <li>Treinar</li>
+    <li>Falar Inglês</li>
+    <li>Jogar basquete</li>
+    <li>Assistir aula</li>
+</ul>
+<h2>Também podemos colcoar uma lista dentro de outra lista <mark style="background-color: cyan;">É assim que se faz um índice</mark></h2>
+<p>Jogos que mais joguei</p>
+<ol>
+    <li>SNES</li>
+    <ul type="Square">
+        <li>Super Mario World</li>
+        <li>Donkey Kong</li>
+        <li>MortalKombat</li>
+    </ul>
+    <li>PlayStation</li>
+    <ul type="Square">
+        <li>Prince of Persia</li>
+        <li>Medal of Honor</li>
+        <li>Street Fight</li>
+    </ul>
+    <li>PlayStation2</li>
+    <ul type="Square">
+        <li>God of War</li>
+        <li>Need for Speed</li>
+        <li>Fifa</li>
+    </ul>
+    <h2>Lista de definição</h2>
+    <dt>HTML</dt>
+    <dd>Linguagem de marcação para a criação de um site.</dd>
+    <dt>CSS</dt>
+    <dd>Linguagem de marcação para o design de um site.</dd>
+    <dt>JavaScript</dt>
+    <dd>Linguagem de programação para a interação de um site.</dd>
+</ol>
+  
+</body>
+</html>

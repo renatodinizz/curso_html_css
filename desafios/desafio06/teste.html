@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Texto em Sobreposição</title>
+  <style>
+    /* Estilo para o texto de sobreposição */
+    .overlay-text {
+      display: none;
+      position: absolute;
+      background-color: rgba(255, 255, 255, 0.8); /* Cor de fundo com transparência */
+      padding: 5px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    /* Quando o mouse passa sobre a palavra, exibe o texto de sobreposição */
+    li:hover .overlay-text {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <ul>
+    <li>
+      Palavra 1
+      <div class="overlay-text">Texto de Sobreposição 1</div>
+    </li>
+    <li>
+      Palavra 2
+      <div class="overlay-text">Texto de Sobreposição 2</div>
+    </li>
+    <li>
+      Palavra 3
+      <div class="overlay-text">Texto de Sobreposição 3</div>
+    </li>
+  </ul>
+
+</body>
+</html>

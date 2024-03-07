@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dimensionar imagens</title>
+</head>
+<body>
+    <code>
+        <h1>Imagem flexivél</h1>
+    </code>
+    <p>Você está vendo a imagem completa? Experimente ampliar o tamanho da sua janela para aproveitar a melhor experiência 😍</p>
+    <!--O comando a ser utilizado será o souce:media:type-->
+    <!--Mude o min para MAX para trabalhar com a largura máxima-->
+    <!--Não esquecer de acrescentar o tipo depois da imagem/ em type-->
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/paisagem-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/paisagem-m.png" type="image/png">
+        <img src="imagens/paisagem-g.png" alt="imagem g">
+    </picture>
+    <h1>Reproduzindo audios</h1>
+    <p>Vamos aprender agora como colocar audios em nosso site.</p>
+    <!--O comando controls foi colocado manualmente-->
+    <audio src="midia/boombapflick.mp3" controls></audio>
+    <!--Os formatos mais aceitos pelos navegadores são MP3, WAV e OGG-->
+    <h1>Vamos aprender outra maneira de colocar audios em um site usabdo quase como se fosse um código <em>IF</em></h1>
+    <!--O Comando é source:src / Usa-se o type audio/mpeg para arquivos em mp3-->
+    <!--Esse código vai funcionar como um IF-->
+    <!--Preload é a forma como o arquivo vai carregar na página, recomendadoi usar o metadata-->
+    <!--Controls é usado para mostrar o controle e loop para repetir-->
+    <audio preload="metadata" controls loop>
+        <source src="midia/boombapflick.mp3" type="audio/mpeg">
+        <source src="midia/boombapflick.ogg" type="audio/ogg">
+        <source src="midia/boombapflick.wav" type="audio/wav">
+        <p>Se nenhum desse aquivos forem reproduzidos, por favor mostrar esse parágrafo!</p>
+    </audio>
+
+    
+</body>
+</html>
