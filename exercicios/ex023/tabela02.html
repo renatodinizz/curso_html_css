@@ -10,6 +10,14 @@
             border-collapse: collapse;
             width: 400px;
             height: 70px;
+            position: relative;
+        }
+        caption {
+            background-color: rgb(51, 52, 53);
+            color: white;
+            font-size: 1.5em;
+            font-weight: bolder;
+            border: 1px solid rgb(0, 0, 0);
         }
         td, th {
             border: 1px solid black;
@@ -20,8 +28,16 @@
         }
 
         thead, tfoot {
-            background-color: gray;
+            background-color: rgb(128, 130, 254);
             color: white;
+        }
+        thead > tr > th {
+            position: sticky;
+            top: -1px;
+            background-color: rgb(128, 130, 254);
+        }
+        tbody > tr:nth-child(odd) {
+            background-color: rgb(190, 189, 189);
         }
     </style>
 </head>
@@ -29,6 +45,7 @@
     <h1>Uso de tabelas grandes</h1>
 
     <table>
+        <caption>População Por Estado</caption>
         <thead>
             <th>Estado</th>
             <th>População</th>
